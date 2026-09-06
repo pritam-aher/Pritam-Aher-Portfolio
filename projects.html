@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRITAM AHER-Projects, Full-Stack Web Engineer</title>
+    <meta name="description"
+      content="Full-stack web apps, backend APIs, and frontend UI work by Jordan Cole, with a detailed case study of the Ledgerly platform.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="route-bar">
+      <div class="route-bar__inner">
+        <div class="route-bar__path">
+          <span class="route-bar__domain">PRITAM AHER</span>
+          <span class="route-bar__cursor" aria-hidden="true"></span>
+        </div>
+        <button class="nav-toggle" aria-expanded="false"
+          aria-controls="primary-nav">
+          Menu <span aria-hidden="true">▾</span>
+        </button>
+        <nav class="route-nav" id="primary-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- ================= PROJECT GRID ================= -->
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section-head">
+            <!-- <p class="eyebrow">GET /projects</p> -->
+            <h1
+              style="font-size:clamp(2rem,4vw,2.6rem); margin-bottom:0.5rem;">Projects</h1>
+            <p>Projects I've built across AI/ML, full-stack development,
+              data analytics, and modern web technologies.</p>
+          </div>
+
+          <div class="filter-bar" role="group"
+            aria-label="Filter projects by category">
+            <button class="filter-btn" data-filter="all"
+              aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="fullstack"
+              aria-pressed="false">Full-Stack Web Apps</button>
+            <button class="filter-btn" data-filter="ai"
+              aria-pressed="false">AI / ML</button>
+            <button class="filter-btn" data-filter="analytics"
+              aria-pressed="false">Data Analytics</button>
+          </div>
+
+          <div class="card-grid">
+
+            <!-- AI / ML -->
+            <article class="rr-card reveal" data-category="ai">
+              <div class="rr-card__request">
+                  <!-- <span class="method method--post">POST</span> -->
+                <span class="rr-card__route">Smartattend-Ai</span>
+                <span class="rr-card__status">AI / ML</span>
+                <span class="rr-card__latency">Real-time</span>
+              </div>
+              <div class="rr-card__body">
+                <h3 class="rr-card__title">SmartAttend AI</h3>
+                <p class="rr-card__desc">AI-powered attendance management
+                  system that uses face recognition to identify registered
+                  students and automatically mark attendance in real time.</p>
+                <div class="stack-line">
+                  <span class="stack-pill">Python</span><span
+                    class="stack-pill">Flask</span><span
+                    class="stack-pill">OpenCV</span><span
+                    class="stack-pill">SQLite</span>
+                </div>
+                <p class="rr-card__desc"><strong>Features:</strong>
+                  Student registration, live face recognition, automatic
+                  attendance marking, attendance tracking, student management,
+                  and a web-based dashboard.</p>
+                <div class="rr-card__links">
+                  <a href="#case-study">Read case study →</a>
+                  <a href="#"
+                    aria-label="SmartAttend AI source on GitHub">GitHub
+                    →</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Full-stack -->
+            <article class="rr-card reveal" data-category="fullstack">
+              <div class="rr-card__request">
+                  <!-- <span class="method method--post">POST</span> -->
+                <span class="rr-card__route">Online-Examination</span>
+                <span class="rr-card__status">Full-Stack</span>
+                <span class="rr-card__latency">WebRTC</span>
+              </div>
+              <div class="rr-card__body">
+                <h3 class="rr-card__title">Online Examination &amp; Proctoring
+                  Platform</h3>
+                <p class="rr-card__desc">Secure web-based platform designed
+                  for conducting online examinations with timed assessments,
+                  webcam-based proctoring, automated evaluation, and result
+                  analytics.</p>
+                <div class="stack-line">
+                  <span class="stack-pill">React.js</span><span
+                    class="stack-pill">Node.js</span><span
+                    class="stack-pill">PostgreSQL</span><span
+                    class="stack-pill">WebRTC</span>
+                </div>
+                <p class="rr-card__desc"><strong>Features:</strong>
+                  Timed exams, question banks, webcam and microphone checks,
+                  webcam-based proctoring, automated evaluation, result
+                  analytics, and examination history.</p>
+                <div class="rr-card__links">
+                  <a href="#" aria-label="Online Examination live demo">Live
+                    demo →</a>
+                  <a href="#" aria-label="Online Examination source on GitHub">
+                    GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Data Analytics -->
+            <article class="rr-card reveal" data-category="analytics">
+              <div class="rr-card__request">
+                  <!-- <span class="method method--get">GET</span> -->
+                <span
+                  class="rr-card__route">BI-Dashboard</span>
+                <span class="rr-card__status">Dashboard</span>
+                <span class="rr-card__latency">Interactive</span>
+              </div>
+              <div class="rr-card__body">
+                <h3 class="rr-card__title">Data Analytics &amp; Business
+                  Intelligence Dashboard</h3>
+                <p class="rr-card__desc">Business intelligence platform
+                  designed to visualize and analyze business data through
+                  interactive dashboards, charts, and key performance
+                  indicators.</p>
+                <div class="stack-line">
+                  <span class="stack-pill">React.js</span><span
+                    class="stack-pill">Node.js</span><span
+                    class="stack-pill">PostgreSQL</span><span
+                    class="stack-pill">Chart.js</span><span
+                    class="stack-pill">D3.js</span>
+                </div>
+                <p class="rr-card__desc"><strong>Features:</strong>
+                  Custom dashboards, KPI monitoring, data import from multiple
+                  sources, interactive visualizations, and exportable
+                  reports.</p>
+                <div class="rr-card__links">
+                  <a href="#" aria-label="Data Analytics Dashboard live demo">
+                    Live demo →</a>
+                  <a href="#"
+                    aria-label="Data Analytics Dashboard source on GitHub">
+                    GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DEEP-DIVE CASE STUDY ================= -->
+      <section class="section section--light" id="case-study"
+        aria-labelledby="case-study-heading">
+        <div class="container">
+          <div class="section-head">
+            <!-- <p class="eyebrow">GET /projects/smartattend-ai/case-study</p> -->
+            <h2 id="case-study-heading">Case study: SmartAttend AI</h2>
+            <p>A structured walkthrough of the AI-powered attendance
+              management system and the technologies used to build it.</p>
+          </div>
+
+          <div class="case-study reveal">
+
+            <div class="case-study__head">
+              <div>
+                <h3 style="font-size:1.4rem;">SmartAttend AI — Face Recognition
+                  Attendance System</h3>
+                <p
+                  style="color:var(--ink-soft); margin-top:0.4rem; max-width:60ch;">
+                  A web-based attendance management system that uses face
+                  recognition to identify registered students and automatically
+                  record their attendance.
+                </p>
+              </div>
+
+              <div class="cta-row">
+                <a class="btn btn--primary" href="#"
+                  style="background:var(--ink); color:#fff;">Live demo</a>
+                <a class="btn btn--ghost" href="#"
+                  style="border-color:#c7ccd2; color:var(--ink);">Source on
+                  GitHub</a>
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Problem<span>Why it
+                  exists</span></div>
+              <div class="case-study__content">
+                <h4>The problem</h4>
+                <p>
+                  Manual attendance can take time and requires maintaining
+                  student records separately. SmartAttend AI was developed
+                  to simplify attendance by using face recognition to identify
+                  registered students and record attendance automatically.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Architecture<span>Stack
+                  decisions</span></div>
+              <div class="case-study__content">
+                <h4>System architecture &amp; stack choice</h4>
+                <p>
+                  The application combines a web-based frontend with a Python
+                  Flask backend, computer-vision functionality, face
+                  recognition,
+                  and SQLite database storage.
+                </p>
+                <ul>
+                  <li>HTML, CSS and JavaScript for the frontend</li>
+                  <li>Python and Flask for backend development</li>
+                  <li>OpenCV for camera and image processing</li>
+                  <li>Face Recognition for student identification</li>
+                  <li>SQLite for student and attendance records</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Features<span>What
+                  shipped</span></div>
+              <div class="case-study__content">
+                <h4>Key features</h4>
+                <ul>
+                  <li>Student registration with name, roll number, and
+                    photo</li>
+                  <li>Live face recognition using the camera</li>
+                  <li>Automatic attendance marking</li>
+                  <li>Attendance records and tracking</li>
+                  <li>Update and delete student details</li>
+                  <li>Web-based attendance dashboard</li>
+                  <li>Fast real-time recognition and response</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Workflow<span>How it
+                  works</span></div>
+              <div class="case-study__content">
+                <h4>Application workflow</h4>
+                <p>
+                  Students are first registered with their basic information
+                  and photograph. During attendance, the camera captures the
+                  student's face and the recognition system compares it with
+                  registered data. Once the student is identified, attendance
+                  is recorded and made available through the dashboard.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Learning<span>Development
+                  experience</span></div>
+              <div class="case-study__content">
+                <h4>What I learned</h4>
+                <p>
+                  This project gave me practical experience with Python,
+                  Flask, computer vision, face recognition, camera input,
+                  database operations, and integrating AI/ML functionality
+                  into a web application.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Stack<span>Technology
+                  stack</span></div>
+              <div class="case-study__content">
+                <h4>Technology stack</h4>
+
+                <div class="stack-line">
+                  <span class="stack-pill">HTML</span>
+                  <span class="stack-pill">CSS</span>
+                  <span class="stack-pill">JavaScript</span>
+                  <span class="stack-pill">Python</span>
+                  <span class="stack-pill">Flask</span>
+                  <span class="stack-pill">OpenCV</span>
+                  <span class="stack-pill">Face Recognition</span>
+                  <span class="stack-pill">SQLite</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="case-study__stage">
+              <div class="case-study__route">Other Projects<span>More
+                  work</span></div>
+              <div class="case-study__content">
+                <h4>Other projects</h4>
+                <p>
+                  Along with SmartAttend AI, I have developed a Data Analytics
+                  &amp; Business Intelligence Dashboard using React.js, Node.js,
+                  PostgreSQL, Chart.js and D3.js, and an Online Examination
+                  &amp; Proctoring Platform using React.js, Node.js,
+                  PostgreSQL and WebRTC.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <nav class="footer-links" aria-label="Developer profiles">
+          <a href="https://github.com/pritam-aher" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/er-pritam-aher-7363b3321/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmIf78d3MQzKwVV0WLGv3VQ%3D%3D"
+            target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/pritam_.985?igsi=d3JnZ2twcmRlYnBn"
+            target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="mailto:pritamaher2005@gmail.com">Email</a>
+        </nav>
+        <p>© 2026 Pritam Aher. Built with React, Node.js, and a healthy respect
+          for query plans.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
